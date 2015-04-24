@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Thursday, April 16, 2015 7:16:46 PM
+   Source : c:\users\eferwe\documents\visual studio 2013\Projects\AarhusDevCoop\AarhusDevCoop\bin\
+     Dest : c:\users\eferwe\documents\visual studio 2013\Projects\AarhusDevCoop\AarhusDevCoop\App_Data\NuGetBackup\20150416-191646\bin\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	c:\users\eferwe\documents\visual studio 2013\Projects\AarhusDevCoop\AarhusDevCoop\bin\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         0         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : Thursday, April 16, 2015 7:16:47 PM
+
