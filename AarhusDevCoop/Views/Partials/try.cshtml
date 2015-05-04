@@ -10,12 +10,12 @@
 
   
 
-@{ var projectDropdown = CurrentPage.Site().Children.Where("DocumentTypeAlias == \"Projects\"").First().Children.Where("Visible").OrderBy("Name"); }
+@{ var projectDropdown = CurrentPage.Site().Children.Where("DocumentTypeAlias == \"ProjectMain\"").First().Children.Where("Visible").OrderBy("Name"); }
  
  
  
  
-            if (menuItem.Name != "Projects")
+            if (menuItem.Name != "ProjectMain")
             {
                 <li class="@(menuItem.IsAncestorOrSelf(CurrentPage) ? "active" : null)">
                     <a href="@menuItem.Url">@menuItem.Name</a>

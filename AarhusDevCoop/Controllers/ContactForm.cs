@@ -28,19 +28,7 @@ namespace AarhusDevCoop.Controllers
         //if (!ModelState.IsValid) { return CurrentUmbracoPage(); }
         //// Read data from model and send mail
         TempData["success"] = true;
-
-        //// Parameters – name, parentId, contentTypeAlias
-            IContent comment = Services.ContentService
-            .CreateContent(model.Subject, CurrentPage.Id, "Comment");
-            // assign values
-            comment.SetValue("name", model.Name);
-            comment.SetValue("email", model.Email);
-            comment.SetValue("subject", model.Subject);
-            comment.SetValue("message", model.Message);
-            // save to Umbraco
-            Services.ContentService.Save(comment);
-        //// Services.ContentService.SaveAndPublishWithStatus(comment);
-           
+   
             MailMessage message = new MailMessage();
             message.To.Add("eferwe@gmail.com");
             message.Subject = model.Subject;
@@ -56,14 +44,23 @@ namespace AarhusDevCoop.Controllers
                 smtp.EnableSsl = true;
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
-                smtp.Credentials = new System.Net.NetworkCredential("eferwe@gmail.com", "password");
+                smtp.Credentials = new System.Net.NetworkCredential("eferwe@gmail.com", "da3barzabarza");
                 smtp.EnableSsl = true;
                 // send mail
                 smtp.Send(message);
             }
           //  TempData["success"] = true;
 
-
+            //// Parameters – name, parentId, contentTypeAlias
+            IContent comment = Services.ContentService.CreateContent(model.Subject, CurrentPage.Id, "ContactPage");
+            // assign values
+            comment.SetValue("name", model.Name);
+            comment.SetValue("email", model.Email);
+            comment.SetValue("subject", model.Subject);
+            comment.SetValue("message", model.Message);
+            // save to Umbraco
+            Services.ContentService.Save(comment);
+            //// Services.ContentService.SaveAndPublishWithStatus(comment);
 
 
         return RedirectToCurrentUmbracoPage();

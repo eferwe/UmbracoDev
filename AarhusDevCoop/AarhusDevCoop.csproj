@@ -1873,6 +1873,26 @@
     <Content Include="umbraco\Webservices\UltimatePickerAutoCompleteHandler.ashx" />
     <Content Include="umbraco\Xslt\Web.config" />
     <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\MacroPartials\menu.cshtml" />
+    <Content Include="Views\Partials\_mainMenu.cshtml" />
+    <Content Include="Views\Partials\Login.cshtml" />
+    <Content Include="Views\Partials\mainMenu.cshtml" />
+    <Content Include="Views\Partials\try.cshtml" />
+    <Content Include="Views\Partials\try1.cshtml" />
+    <Content Include="Views\AboutUs.cshtml" />
+    <Content Include="Views\Article.cshtml" />
+    <Content Include="Views\Articles.cshtml" />
+    <Content Include="Views\ContactPage.cshtml" />
+    <Content Include="Views\ForbiddenAccess.cshtml" />
+    <Content Include="Views\Home1.cshtml" />
+    <Content Include="Views\HomePage.cshtml" />
+    <Content Include="Views\LandingPage.cshtml" />
+    <Content Include="Views\login.cshtml" />
+    <Content Include="Views\Projects.cshtml" />
+    <Content Include="Views\TextPage.cshtml" />
+    <Content Include="Views\Partials\projectdrop.cshtml" />
+    <Content Include="Views\Project.cshtml" />
+    <Content Include="Views\ProjectMain.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
